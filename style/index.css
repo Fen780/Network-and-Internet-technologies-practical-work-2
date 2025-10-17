@@ -6,8 +6,6 @@ header {
     width: 100%;
     text-align: right;
     padding: 0;
-    white-space: nowrap;
-    min-height: 40px;
 }
 
 .content {
@@ -40,10 +38,9 @@ header nav {
 header .nav-link {
     text-decoration: none;
     color: black;
-    padding: 8px 12px;
+
     display: inline-block;
     vertical-align: middle;
-    height: 100%;
     padding: 11px 11px;
 }
 
@@ -90,8 +87,7 @@ header .current-page {
     width: 59%;
     vertical-align: top;
     font-size: 16px;
-    white-space: normal;
-    height: 700px;
+
 }
 
 .central .big-paragraph {
@@ -112,8 +108,9 @@ header .current-page {
 }
 
 .central .middle-bottom-line {
-    white-space: nowrap;
     height: 74%;
+    white-space: nowrap;
+
 }
 
 .middle-bottom-box {
@@ -124,8 +121,7 @@ header .current-page {
     width: 33%;
     overflow: hidden;
     display: inline-block;
-    min-height: 400px;
-    height: 100%;
+    vertical-align: top;
 }
 
 .middle-bottom-box h3 {
@@ -135,7 +131,6 @@ header .current-page {
 .middle-bottom-box p {
     overflow: hidden;
     white-space: normal;
-    height: 47%;
 }
 
 .middle-bottom-box span {
@@ -158,6 +153,7 @@ header .current-page {
     width: 20%;
     height: 700px;
     overflow: hidden;
+    padding-right: 3px;
 }
 
 .left-box {
@@ -260,13 +256,14 @@ header .current-page {
     height: 700px;
     overflow: hidden;
     margin-left: 3px;
+    padding-left: 3px;
 }
 
 .right-box {
     width: 100%;
     height: 60%;
     box-sizing: border-box;
-    white-space: nowrap;
+
     margin-bottom: 5px;
 }
 
@@ -365,4 +362,17 @@ header .current-page {
     color: white;
     background: rgb(0, 98, 255);
     vertical-align: bottom;
+
+}
+
+.more-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* --- */
+.body-content {
+    width: 90%;
+    margin: 0 auto;
 }
