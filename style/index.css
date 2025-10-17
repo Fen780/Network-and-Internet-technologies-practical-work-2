@@ -10,6 +10,12 @@ header {
     min-height: 40px;
 }
 
+.content {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
 .logo {
     margin: 0;
     float: left;
@@ -29,8 +35,6 @@ header {
 
 header nav {
     white-space: nowrap;
-    padding-top: auto;
-    padding-bottom: auto;
 }
 
 header .nav-link {
@@ -63,16 +67,14 @@ header .current-page {
 
 .img-galery a {
     display: inline-block;
-    width: 25%;
+    width: 19.5%;
     margin: 0 1px;
     text-decoration: none;
 }
 
 .img-galery img {
     width: 100%;
-    height: auto;
     display: inline-block;
-    margin: 0 1px;
     padding: 0;
 }
 
@@ -83,23 +85,35 @@ header .current-page {
 /* центральный блок */
 
 .central {
-    display: inline;
-    white-space: nowrap;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 59%;
+    vertical-align: top;
+    font-size: 16px;
+    white-space: normal;
+    height: 700px;
 }
 
-.big-paragraph {
+.central .big-paragraph {
     box-sizing: border-box;
     border: thin solid black;
     padding: 10px;
     margin-right: 0;
     margin-left: 0;
     margin-bottom: 10px;
-    margin-top: 10px;
     white-space: normal;
+    height: 25%;
+    overflow: hidden;
 }
 
-.middle-bottom-line {
+.big-paragraph p {
+    max-height: 50%;
+    overflow: hidden;
+}
+
+.central .middle-bottom-line {
     white-space: nowrap;
+    height: 74%;
 }
 
 .middle-bottom-box {
@@ -110,8 +124,8 @@ header .current-page {
     width: 33%;
     overflow: hidden;
     display: inline-block;
-    height: auto;
     min-height: 400px;
+    height: 100%;
 }
 
 .middle-bottom-box h3 {
@@ -119,13 +133,9 @@ header .current-page {
 }
 
 .middle-bottom-box p {
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    line-clamp: 5;
-    -webkit-box-orient: vertical;
     overflow: hidden;
     white-space: normal;
+    height: 47%;
 }
 
 .middle-bottom-box span {
@@ -136,34 +146,37 @@ header .current-page {
 
 .middle-bottom-box img {
     width: 53%;
-    height: auto;
+    height: 40%;
     border-radius: 10px;
 }
 
 /* левый блок */
 .left {
     display: inline-block;
-    white-space: nowrap;
     box-sizing: border-box;
     border-right: thin solid black;
     width: 20%;
+    height: 700px;
     overflow: hidden;
 }
 
 .left-box {
-    white-space: nowrap;
-    display: inline-block;
-    width: 60%;
-    vertical-align: top;
-    min-height: 300px;
+    width: 100%;
+    height: 40%;
+    box-sizing: border-box;
+    white-space: normal;
+    margin-bottom: 5px;
 }
+
 
 .left-box .information {
     display: inline-block;
     width: 75%;
+    height: 100%;
     vertical-align: top;
-    font-size: 20px;
     box-sizing: border-box;
+    padding: 10px;
+    overflow: hidden;
 }
 
 .left-box .information h3,
@@ -171,31 +184,170 @@ header .current-page {
     width: 100%;
     white-space: normal;
     overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
+    font-size: 11pt;
+    margin: 0;
 }
 
 .left-box .information h3 {
-    -webkit-line-clamp: 2;
-    line-clamp: 2;
-    -webkit-box-orient: vertical;
-    margin: 0 0 8px 0;
+    margin-bottom: 5px;
+    height: 5%;
 }
 
 .left-box .information p {
-    -webkit-line-clamp: 3;
-    line-clamp: 3;
-    -webkit-box-orient: vertical;
-    margin: 0;
-    height: 100%;
+    margin-bottom: 10px;
+    height: 80%;
 }
 
 .left-box img {
     display: inline-block;
+    width: 25%;
+    height: 100%;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+/* --- */
+.left-box-bottom {
     width: 100%;
-    height: auto;
-    vertical-align: middle;
+    height: 60%;
+    box-sizing: border-box;
+    white-space: normal;
+}
+
+
+.left-box-bottom .information {
+    display: inline-block;
+    width: 75%;
+    height: 100%;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.left-box-bottom .information h3,
+.left-box-bottom .information p {
+    width: 100%;
+    white-space: normal;
+    overflow: hidden;
+    font-size: 11pt;
+    margin: 0;
+}
+
+.left-box-bottom .information h3 {
+    margin-bottom: 5px;
+}
+
+.left-box-bottom .information p {
+    margin-bottom: 10px;
+    height: 80%;
+}
+
+.left-box-bottom img {
+    display: inline-block;
+    width: 25%;
+    height: 100%;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+/* правый блок*/
+.right {
+    display: inline-block;
+    box-sizing: border-box;
+    border-left: thin solid black;
+    width: 20%;
+    height: 700px;
+    overflow: hidden;
+    margin-left: 3px;
+}
+
+.right-box {
+    width: 100%;
+    height: 60%;
+    box-sizing: border-box;
+    white-space: nowrap;
+    margin-bottom: 5px;
+}
+
+.right-box .information {
+    display: inline-block;
+    width: 75%;
+    height: 100%;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.right-box .information h3,
+.right-box .information p {
+    width: 100%;
+    white-space: normal;
+    overflow: hidden;
+    font-size: 11pt;
+    margin: 0;
+}
+
+.right-box .information h3 {
+    margin-bottom: 5px;
+}
+
+.right-box .information p {
+    margin-bottom: 10px;
+    height: 80%;
+}
+
+.right-box img {
+    display: inline-block;
+    width: 25%;
+    height: 100%;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+/* --- */
+.right-box-bottom {
+    width: 100%;
+    height: 40%;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+
+.right-box-bottom .information {
+    display: inline-block;
+    width: 80%;
+    height: 100%;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.right-box-bottom .information h3,
+.right-box-bottom .information p {
+    width: 100%;
+    white-space: normal;
+    overflow: hidden;
+    font-size: 11pt;
+    margin: 0;
+}
+
+.right-box-bottom .information h3 {
+    margin-bottom: 5px;
+}
+
+.right-box-bottom .information p {
+    margin-bottom: 10px;
+    height: 75%;
+}
+
+.right-box-bottom img {
+    display: inline-block;
+    width: 25%;
+    height: 100%;
+    vertical-align: top;
     box-sizing: border-box;
 }
 
@@ -212,4 +364,5 @@ header .current-page {
     border-radius: 5px;
     color: white;
     background: rgb(0, 98, 255);
+    vertical-align: bottom;
 }
